@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap');
+
+body {
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+/* Navbar */
+.navbar { 
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 30px 10px;
+    z-index: 2;
+}
+
+.navbar a {
+    text-decoration: none;
+    color:#3f3f3f;
+    padding-top: 5px;
+}
+
+.navbar a.active {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.navbar a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.cv-button {
+  position: fixed;
+  top: 31px;
+  right: 80px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin-top: -6px;
+  border: none;
+  font-size: 15px;
+  display: flex;           
+  justify-content: center; 
+  align-items: center;     
+  height: auto;
+  z-index: 3;           
+}
+
+.cv-button:hover {
+    background-color: #3f3f3f;
+}
+
+/* Header Sec */
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 50px);
+}
+
+/* Cursor Effect */
+.name {
+    font-size: 70px;
+    border-right: 5px solid;
+    width: 17.2ch;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 6s steps(18, end) infinite,
+        cursor .6s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {border-color: transparent}
+}
+
+@keyframes typing {
+    0%   { width: 0 }         
+    40%  { width: 17.2ch }
+    60%  { width: 17.2ch }    
+    100% { width: 0 } 
+}
+
+.self-desc {
+    width: 60%;
+    font-size: 20px;
+    text-align: center;
+    opacity: 60%;
+}
+
+.explore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    text-decoration: none;
+    padding: 13px 25px;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    margin-top: 20px;
+}
+
+.exploer .active {
+    background-color: #000000;
+}
+
+.explore:hover {
+    background-color: #3f3f3f;
+}
+
+.explore img {
+    width: 15px;
+    padding-left: 10px;
+}
+
+/* About Me Sec */
+
+.about-me {
+    margin-top: 8vh;
+}
+
+.about-me img {
+    width: 100%;
+    height: auto;
+}
+
+.about-text p {
+    display: flex;
+    font-size: 17px;
+    opacity: 60%;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 10px;
+}
+
+.tab-title {
+    font-size: 50px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.title-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 40%;
+    font-size: 17px;
+    opacity: 60%;
+    margin-top: -2vh;
+}
+
+.tab {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.tab button {
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 25px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  margin-top: 10vh;
+  color:#3f3f3f;
+  background-color: transparent;
+}
+
+.tab button:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.tab button.active {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.tab-content {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding-top: 10vh;
+    gap: 60px;
+}
+
+.tech1, .tech2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    max-width: 100%;
+    margin-bottom: 10vh;
+}
+
+
+.tech1 img, .tech2 img {
+    width: 80px;
+    height: auto;
+}
+
+/* React Image */
+.tech1 img:nth-child(4) {
+  width: 6%;
+  height: auto;
+}
+
+/* Laravel Image */
+.tech1 img:nth-child(5) {
+  width: 5.5%;
+  height: auto;
+}
+
+/* Figma Image */
+.tech2 img:nth-child(3) {
+  width: 5.3%;
+  border-radius: 15px;
+  height: auto;
+}
+
+.tab-content h2 {
+    text-align: center;   
+    width: 100%;
+    justify-content: center; 
+    font-size: 40px;
+    font-weight: 400;      
+}
+
+.bncc h2, .tfi h2 {
+    font-weight: 300;
+}
+
+.bncc-desc, .tfi-desc {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: -1vh;
+    margin-bottom: 35px;
+    max-width: 60%;
+    font-size: 17px;
+    opacity: 60%;
+}
+
+.bncc-content, .tfi-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tfi {
+    margin-top: 100px;
+}
+
+.bncc  img, .tfi img {
+    width: 25%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.tfi img {
+    margin-bottom: 5vh;
+}
+
+/* Portfolio Sec */
+
+.title-pr h1 {
+    text-align: start;
+    font-size: 70px;
+    font-weight: 300;
+    margin-top: 16vh;
+    padding-left: 47px;
+    color: #222;
+}
+
+.project {
+    display: flex;
+    flex-direction: row; 
+    gap: 10px;
+    padding-top: 8vh;
+    align-items: stretch;
+    justify-content: center; 
+    align-items: flex-start; 
+    flex-wrap: wrap;
+    margin-bottom: 5vh;
+}
+
+.pr {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #fff;
+    padding: 20px;
+    width: 400px;  
+    height: 400px;
+}
+
+.header-pr {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 1px;    
+}
+
+.header-pr img {
+    width: 50px;
+    height: auto;
+    padding-top: 6.5vh;
+}
+
+.title-card{
+    padding-left: 10px;
+}
+
+.title-card h2 {
+    font-size: 50px;
+    font-weight: 300;
+    margin: 0;
+    color: #000000;
+}
+
+.title-card p {
+    font-size: 20px;
+    font-weight:400;
+    padding-top: 12px;
+    margin: 0;
+    color: #000000;
+}
+
+.pr-content {
+    font-size: 15px;
+    padding-top: 15px;
+    flex-grow: 1;
+    width: 90%;
+    align-items: flex-start;
+    color: #000000;
+    opacity: 60%;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.footer-img img {
+    width: 100%;
+    height: 100px;
+    padding-bottom: 2vh; 
+    object-fit: cover;
+}
+
+.view-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #000000;
+    width: 30%;
+    height: 5vh;
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 5vh;
+}
+
+.view-btn:hover {
+    background-color: #3f3f3f;
+}
+
+.border {
+  width: 2px;
+  height: 68vh;
+  border-right: 2px solid rgb(204, 204, 204);
+  margin: 0 20px;
+}
+
+/* Projects Page */
+.pr-page {
+    margin-top: 10vh;
+}
+
+.pr-page h1 {
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.pr-page img {
+    width: 97%;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+}
+
+.explanation {
+    padding: 20px;
+    font-size: 17px;
+    opacity: 60%;
+    text-align: justify;
+}
+
+.gl-wrapper {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.information {
+    flex: 1;
+}
+
+.information h2 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.information h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.pr-link h3 {
+    font-size: 20px;
+    font-weight: 400;
+    width: 60%;
+}
+
+.pr-link a {
+    text-decoration: none;
+    font-weight: 200;
+    color: #000000;
+}
+
+.pr-type {
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 15%;
+    height: 4vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.role {
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 42%;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body.project2 .role {
+  width: 22%;
+
+}
+
+body.project3 .role {
+  width: 22%;
+
+}
+
+.pr-desc {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.pr-desc .content {
+    border-radius: 8px;
+}
+
+.content h2 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.pr-desc .content p {
+    font-size: 17px;
+    opacity: 60%;
+}
+
+/* Contact Page */
+
+.contact-wrapper {
+    margin-top: 16vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.contact-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-title h1 {
+    font-size: 80px;
+    font-weight: 400;
+    text-align: center;
+    width: 25%;
+    margin-bottom: -2px;
+}
+
+.contact-title h2 a{
+    font-size: 25px;
+    font-weight: 300;
+    color: #000000;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    gap: 20px;               
+}
+
+.social-media img {
+    width: 30px;  
+    height: auto;
+    padding-top: 20px;
+}

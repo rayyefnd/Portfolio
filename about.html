@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About Me</a>
+        <a href="project.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <a href="Assets/Rayya Al Ghazali Efendi Resume.pdf" download="Assets/Rayya Al Ghazali.pdf" class="cv-button">Download CV</a>
+
+     <div class="about-me">
+        
+        <img src="Assets/aboutme.png" alt="About Me">
+
+        <div class="about-text">
+            <p>A Computer Science student at BINUS University with a strong interest in software engineering. 
+                My journey began with curiosity about how the applications I frequently use are built, 
+                which unexpectedly led me deeper into the world of Computer Science and inspired me to explore the field further. 
+                Through academic projects and collaborative work, I've gained hands-on experience in addressing real-world problems, particularly in front-end development. 
+                Beyond contributing to various projects, I'm also actively involved in communities such as the Bina Nusantara Computer Club. 
+                These experiences have helped me strengthen not only my technical skills but also my abilities in collaboration, communication, and problem-solving. 
+                I'm eager to continue learning and growing so that I can contribute even more by creating meaningful digital solutions.
+            </p>
+        </div>
+    </div>
+
+    <div class="tab-container">
+        <h2 class="tab-title">Experience</h2>
+        <p class="title-desc">Personal experience in using various technologies and involvement in organizational activities.</p>
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'TechStack')">Tech Stack</button>
+            <button class="tablinks" onclick="openTab(event, 'organization')">Organization & Volunteer</button>
+        </div>
+
+        <div id="TechStack" class="tab-content">
+            <div class="tech1">
+                <img src="Assets/html-5 (1).svg" alt="">
+                <img src="Assets/css-3 (1).svg" alt="">
+                <img src="Assets/java-script (2).svg" alt="">
+                <img src="Assets/React-icon.svg.svg" alt="">  
+                <img src="Assets/Laravel-Logo.wine.svg" class="laravel">
+                <img src="Assets/python.png" alt="">
+            </div>
+
+            <div class="tech2">
+                <img src="Assets/Adobe_Photoshop_CC_icon.svg.png" alt="">
+                <img src="Assets/Adobe_Illustrator_CC_icon.svg.png" alt="">
+                <img src="Assets/figma.svg" alt="">
+                <img src="Assets/sql.svg" alt="">
+                <img src="Assets/C_Logo.svg" alt="">
+            </div>
+        </div>
+
+        <div id="organization" class="tab-content">
+            <div class="bncc">
+                <h2>Bina Nusantara Computer Club</h2>
+                <p class="bncc-desc">Contributed to various internal organizational activities, ranging from program coordination and team collaboration to the execution of member events. This active role had a positive impact on both personal development and meaningful contributions to the BNCC community as a whole.</p>
+                <div class="bncc-content">
+                    <img src="Assets/IMG-20250928-WA0001.jpg" alt="">
+                    <img src="Assets/IMG-20250928-WA0006.jpg" alt="">
+                    <img src="Assets/IMG-20250928-WA0008.jpg" alt="">
+                </div>
+            </div>
+            
+            <div class="tfi">
+                <h2>Teach For Indonesia</h2>
+                <p class="tfi-desc">Teach For Indonesia (TFI) is a social organization based at Bina Nusantara University (BINUS) that focuses on education, environment, health, and community empowerment. In this organization, I contributed to several community-focused social activities, as shown in the pictures below. These activities had a positive impact on me by enhancing social awareness while also developing leadership, communication, and teamwork skills.</p>
+                <div class="tfi-content">
+                    <img src="Assets/IMG-20250928-WA0012.jpg" alt="">
+                    <img src="Assets/IMG-20250104-WA0005.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
